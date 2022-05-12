@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: 2048-game-svc
+spec:
+  template:
+    metadata:
+      name: 2048-game
+    spec:
+      containers:
+        # Replace with your docker registry info
+        - image: <YOUR_DOCKER_REGISTRY>/<REPO_NAME>/<IMAGE_NAME>:<TAG>
+          ports:
+            - containerPort: 80
