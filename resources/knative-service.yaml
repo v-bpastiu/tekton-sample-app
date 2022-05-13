@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: 2048-game-svc
+spec:
+  template:
+    metadata:
+      name: 2048-game
+    spec:
+      containers:
+        # Replace with your docker registry info
+        - image: registry.digitalocean.com/tekton-ci-cd/2048-game:latest
+          ports:
+            - containerPort: 80
