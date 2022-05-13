@@ -9,6 +9,6 @@ spec:
     spec:
       containers:
         # Replace with your docker registry info
-        - image: <YOUR_DOCKER_REGISTRY>/<REPO_NAME>/<IMAGE_NAME>:<TAG>
+        - image: registry.digitalocean.com/tekton-ci-cd:latest
           ports:
             - containerPort: 80
