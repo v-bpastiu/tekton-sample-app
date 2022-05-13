@@ -4,8 +4,6 @@ metadata:
   name: game-2048
 spec:
   template:
-    metadata:
-      name: game-2048-
     spec:
       containers:
         # Replace with your docker registry info
