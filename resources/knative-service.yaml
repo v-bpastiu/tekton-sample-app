@@ -1,11 +1,11 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: 2048-game-svc
+  name: game-2048-svc
 spec:
   template:
     metadata:
-      name: 2048-game
+      name: game-2048
     spec:
       containers:
         # Replace with your docker registry info
